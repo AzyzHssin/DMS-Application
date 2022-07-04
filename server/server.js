@@ -7,11 +7,14 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
+
 const Port = process.env.port || 3000
 
 app.use('/users', require('./routes/users.js'));
 
 app.use('/sell', require('./routes/market.js'));
+
+app.use('/product', require('./routes/product.js'));
 
 
 app.listen(Port,() =>{

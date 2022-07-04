@@ -12,7 +12,7 @@ module.exports = {
             
         })
     },
-    createNewUser: (req,res) =>{
+    createNewUser: async (req,res) =>{
         user.getUsersByName([req.body.username], (err, result)=>{
             if(err){
                 console.log(err)
@@ -20,7 +20,7 @@ module.exports = {
                 res.status(400).send("User already exists")
             }else {
                 try {
-                    user.createNewUser([req.body.username, req.body.password, req.body.avatar, req.body.wallet], (err, results) => {
+                    user.createNewUser([req.body.username, req.body.password, req.body.avatar, req.body.wallet, req.body.tel], (err, results) => {
                         if (err) {
                             console.log(err)
                             res.sendStatus(409);

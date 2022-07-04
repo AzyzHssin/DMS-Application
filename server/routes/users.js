@@ -8,7 +8,7 @@ const router = express.Router();
 router.get('/', require('../controllers/users.js').getAllUsers)
 
 //login :
- router.get('/login', require('../controllers/users.js').login)
+ router.post('/login', require('../controllers/users.js').login)
 
 //SignUp:
  router.post('/sign', require('../controllers/users.js').createNewUser) 

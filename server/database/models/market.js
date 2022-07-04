@@ -5,7 +5,7 @@ const connection = require('../index.js');
 
 module.exports = {
     addMarket: (params, callback) =>{
-        let mysql = `INSERT INTO sell (users_id, quantite, categorie, description, price, image_url, title) VALUE (?,?,?,?,?,?,?)`;
+        let mysql = `INSERT INTO sell (users_id, quantite, categorie, description, price, image_url, title, tel) VALUE (?,?,?,?,?,?,?,?)`;
         connection.query(mysql, params, (err, results) =>{
             return err ? callback(err,null) : callback(null, results);
         })

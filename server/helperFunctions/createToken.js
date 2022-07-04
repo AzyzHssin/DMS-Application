@@ -1,19 +1,10 @@
-const bcrypt =  require ('bcrypt')
+const jwt = require('jsonwebtoken')
+const secret  =require('../config/authConfig')
 
- module.exports = {
-  hashPassword:  (password, saltRounds) =>{
-     bcrypt.genSalt(saltRounds,(err,salt)=>{
-      bcrypt.hash(password,salt,(err,hash)=>{
+ module.exports = function (userObject){
+    jwt.sign(userObject,secret,(err,result)=>{
         if(err) throw err;
-        else return hash
-      })
-     })
-  },
-  verifyPassword:  (password, hashedPassword) =>{
-    bcrypt.compare(password,hashedPassword,(err,result)=>{
-      if(err) throw err
-      else return result
+        else return result
     })
-   }
- };
+ }
 
