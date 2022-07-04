@@ -1,12 +1,13 @@
-DROP DATABASE IF EXISTS Posts;
-CREATE DATABASE Posts;
-USE posts;
+DROP DATABASE IF EXISTS market;
+CREATE DATABASE market;
+USE market;
 
 
 CREATE TABLE users(
     id int NOT NULL AUTO_INCREMENT,
     username varchar(40) NOT NULL,
     password varchar(255) NOT NULL,
+    avatar VARCHAR(255) NOT NULL,
     PRIMARY KEY (ID)
 );
 CREATE TABLE blogs(
