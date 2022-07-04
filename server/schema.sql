@@ -29,21 +29,21 @@ CREATE TABLE sell(
     REFERENCES market.users (id)
     ON DELETE CASCADE 
 );
--- CREATE TABLE product(
---     id int NOT NULL AUTO_INCREMENT,
---     title varchar(40) NOT NULL,
---     image_url varchar(220) NOT NULL,
---     price varchar(30) NOT NULL,
---     description VARCHAR(255) NOT NULL,
---     categorie VARCHAR(255) NOT NULL,
---     quantite INT NOT NULL,
---     tel VARCHAR(10) NOT NULL,
---     users_id INT NOT NULL,
---     PRIMARY KEY (ID),
---     INDEX userId (users_id) ,
---      CONSTRAINT userId
---     FOREIGN KEY (users_id)
---     REFERENCES market.users (id)
---     ON DELETE CASCADE 
--- );
+CREATE TABLE product(
+    id int NOT NULL AUTO_INCREMENT,
+    title varchar(40) NOT NULL,
+    image_url varchar(220) NOT NULL,
+    price varchar(30) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    categorie VARCHAR(255) NOT NULL,
+    quantite INT NOT NULL,
+    tel VARCHAR(10) NOT NULL,
+    users_id INT NOT NULL,
+    PRIMARY KEY (ID),
+    INDEX userId (users_id) ,
+     CONSTRAINT userId
+    FOREIGN KEY (users_id)
+    REFERENCES market.users (id)
+    ON DELETE CASCADE 
+);
 
