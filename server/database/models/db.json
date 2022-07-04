@@ -1,0 +1,102 @@
+[
+    {
+    "id": 1,
+    "title": "Samsung TV",
+    "image_url": "https://m.media-amazon.com/images/I/71RiQZ0J2SL._AC_SL1000_.jpg",
+    "price": "3196 DT",
+    "description": "SAMSUNG 65-inch Class Crystal UHD TU-8000 Series - 4K UHD HDR Smart TV with Alexa Built-in (UN65TU8000FXZA, 2020 Model)",
+    "categorie": "Crystal processor 4K",
+    "quantite": 3,
+    "tel": "22 222 222"
+},
+{
+    "id": 2,
+    "title": "Midual Motor",
+    "image_url": "https://thepack.news/wp-content/uploads/2021/04/verge_motorcycles_blog-768x768.jpg",
+    "price": "5.600 DT",
+    "description": "Newsflash | Verge Motorcycles won the 2021 Red Dot Design Award for Product Design",
+    "categorie": "OX Motorcycles ",
+    "quantite": 8,
+    "tel": "22 222 222"
+},
+{
+    "id": 3,
+    "title": "Original Sherpa Trucker Jacket",
+    "image_url": "https://lsco.scene7.com/is/image/lsco/levis/clothing/361360003-alt1-pdp.jpg",
+    "price": "128 DT",
+    "description": "The cozier counterpart to our Original Trucker Jacket. Levis® iconic, instantly recognizable jean jacket has been a symbol of individual self-expression for decades. This classic is lined with fuzzy sherpa for warmth and comfort, all while keeping it authentic.",
+    "categorie": "Levis",
+    "quantite": 18,
+    "tel": "22 222 222"
+},
+{
+    "id": 4,
+    "title": "iphone 13 pro",
+    "image_url": "https://www.apple.com/v/iphone-13-pro/f/images/overview/design/finishes_1_alpine_green__bxgqurawflau_large.jpg",
+    "price": "3.250 DT",
+    "description": "A dramatically more powerful camera system. A display so responsive, every interaction feels new again. The world’s fastest smartphone chip. Exceptional durability. And a huge leap in battery life.",
+    "categorie": "ProMotion technology with adaptive refresh rates up to 120Hz · HDR display · True Tone · Wide color (P3)",
+    "quantite": 6,
+    "tel": "22 222 222"
+},
+{
+    "id": 5,
+    "title": "TOYOTA C-SEGMENT MPV",
+    "image_url": "https://www.indiacarnews.com/wp-content/uploads/2020/05/Toyota-Avanza-MPV-1.jpg",
+    "price": "72.500 DT",
+    "description": "Wide selection of Cars at affordable price with unbeatable services and value for money.",
+    "categorie": " 1.5L petrol turbo engine",
+    "quantite": 2,
+    "tel": "22 222 222"
+},
+{
+    "id": 6,
+    "title": "PC Gamer",
+    "image_url": "https://cdn.futura-sciences.com/buildsv6/images/mediumoriginal/0/7/9/079e9d41a8_50178680_boitier-pc-gamer.jpg",
+    "price": "3.500 DT",
+    "description": "PC GAMER THEGREAT 71054-4",
+    "categorie": "Processeur Intel core i7-7700 (up to 4.2 GHz) Carte mère : MSI H110M PRO VD",
+    "quantite": 10,
+    "tel": "22 222 222"
+},
+{
+    "id": 7,
+    "title": "511™ Slim Fit Men's Jeans",
+    "image_url": "https://lsco.scene7.com/is/image/lsco/levis/clothing/361360003-alt1-pdp.jpg",
+    "price": "68 DT",
+    "description": "The cozier counterpart to our Original Trucker Jacket. Levi's® iconic, instantly recognizable jean jacket has been a symbol of individual self-expression for decades. This classic is lined with fuzzy sherpa for warmth and comfort, all while keeping it authentic.",
+    "categorie": "Levis",
+    "quantite": 26,
+    "tel": "22 222 222"
+},
+{
+    "id": 8,
+    "title": "Appartement s+3 meublé",
+    "image_url": "https://storage.googleapis.com/tayara-migration-yams-pro/48/48393551-38a9-41fb-a6e0-b50d8e20f3ee",
+    "price": "150.000 DT",
+    "description": "Appartement S+3 bien meublé résidence avec gardien, à 5 mins à pied de la mer. parking sous-sol ,2 climatiseurs chaud froid, 1 télévision, 1 machine à laver auto, espace vert, 1 salle de bain, 2 toilettes, un grand salon. ",
+    "categorie": "",
+    "quantite": 1,
+    "tel": "22 222 222"
+},
+{
+    "id": 9,
+    "title": "TV REDDRAGEON",
+    "image_url": "https://storage.googleapis.com/tayara-migration-yams-pro/55/557b6539-2fb8-43cc-97ec-906499dee648",
+    "price": "599 DT",
+    "description": "Ecran REDRAGON EMERALD 27 pouces 165 Hz ",
+    "categorie": "Résolution (H x V) : 1920 x 1080 , Format d'image : 16 : 9 , Temps de réponse : 1 ms , Angle de vision LR, UD (CR> 10) : H 178 / V 178 ",
+    "quantite": 5,
+    "tel": "22 222 222"
+},
+{
+    "id": 10,
+    "title": "Bicyclette",
+    "image_url": "https://storage.googleapis.com/tayara-migration-yams-pro/ef/ef80f447-fb4e-49d6-aaa0-4a51d8340a12",
+    "price": "180 DT",
+    "description": "Bicyclette B'twin Mistigril 20 Pouces Importer De France 🇫🇷",
+    "categorie": "CONDITION NUM 20020706 PHOTOS REEL IMPORTER DE FRANCE 🇫🇷 MODEL 2022 ROUES 20 POUCES 7 VITESSE SHIMANO DE 5 À 10 ANS",
+    "quantite": 4,
+    "tel": "22 222 222"
+}
+]
