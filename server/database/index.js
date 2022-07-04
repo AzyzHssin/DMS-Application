@@ -5,7 +5,7 @@ const mysqlconfig = require('./config.js');
 const connection = mysql.createConnection(mysqlconfig);
 
 connection.connect((error)=>{
-    if(err){
+    if(error){
         console.log(error)
     }else{
     console.log("DataBase connected")

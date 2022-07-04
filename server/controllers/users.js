@@ -7,9 +7,9 @@ module.exports = {
         user.getAllUsers((err,result)=>{
             if(err) {
                 console.log(err);
-            }else {
-                res.json(result);
-            }
+            } 
+            res.json(result);
+            
         })
     },
     createNewUser: (req,res) =>{
@@ -20,7 +20,7 @@ module.exports = {
                 res.status(400).send("User already exists")
             }else {
                 try {
-                    user.createNewUser([req.body.username, req.body.password], (err, results) => {
+                    user.createNewUser([req.body.username, req.body.password, req.body.avatar, req.body.wallet], (err, results) => {
                         if (err) {
                             console.log(err)
                             res.sendStatus(409);
