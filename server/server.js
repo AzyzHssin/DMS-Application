@@ -11,6 +11,8 @@ const Port = process.env.port || 3000
 
 app.use('/users', require('./routes/users.js'));
 
+app.use('/sell', require('./routes/market.js'));
+
 
 app.listen(Port,() =>{
     console.log('Server is working on http://localhost:'+Port);
