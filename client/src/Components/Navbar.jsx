@@ -7,8 +7,8 @@ const Navbar = (props) => (
     <div id="sidebar">
  
     <ul className="nav">
-      <li>Products</li>
-      <li>Sell Your Product</li>
+      <li onClick={()=>props.changeView("products")}>Products</li>
+      <li onClick={()=>props.changeView("SellYourProduct")}>Sell Your Product</li>
       
       
       

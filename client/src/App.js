@@ -13,12 +13,15 @@ class App extends React.Component{
     this.state = {
       view:"welcome",
       productid:null,
-      data:[],
+      bigdata:[],
       account:{},
       username:"",
       password:""
     };
+    this.fetchingProducts = this.fetchingProducts.bind(this)
+    this.changeView = this.changeView.bind(this)
 
+    
     
     }
     componentDidMount(){
@@ -41,12 +44,13 @@ class App extends React.Component{
     })
     }
     fetchingProducts(){
-      axios.get("http://localhost:3001/").then(result=>{
+      axios.get("http://localhost:3001/get").then((result)=>{
         
         this.setState({
-            data:result.data
+          bigdata:result.data
         })
-        
+      
+        console.log(this.state.bigdata,"big data")
     })
     }
 
@@ -58,7 +62,7 @@ class App extends React.Component{
    renderView(){
     if(this.state.view==="products"){
       return(
-        <Products />
+        <Products data={this.state.bigdata}/>
       )
    }
    else if(this.state.view==="SellYourProduct"){

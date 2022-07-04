@@ -12,20 +12,19 @@ module.exports = {
                 res.status(201).send("market has been add it")
             }
         })
-    },
-    getMarketsByuserName: (req, res) => {
-        market.getAllMarkets(async (err, result) => {
-            if (err) { 
-                console.log(err)
-                res.status(500).send()
-            }
-            else {
-           
-            const Target = await result.filter(market => market.tel.toLowerCase() === req.body.tel.toLowerCase());
-            res.json(Target)
-        }
-        })
     }
+,
+getMarket:(req,res)=>{
+    console.log("im inside the request get")
+    market.getAllMarkets((err,result)=>{
+        if(err){
+            res.status(500).send()
+        }
+        else{
+                res.json(result)
+        }
+})
+}
 
 
 }
