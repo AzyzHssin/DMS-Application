@@ -10,7 +10,7 @@ CREATE TABLE users(
     avatar VARCHAR(255) NOT NULL,
     PRIMARY KEY (ID)
 );
-CREATE TABLE blogs(
+CREATE TABLE sell(
     id int NOT NULL AUTO_INCREMENT,
     title varchar(40) NOT NULL,
     image_url varchar(220) NOT NULL,
