@@ -5,12 +5,14 @@ const router = express.Router();
 
 //getAllUser :
 
-router.get('/', require('../controllers/users.js').getAllUsers)
-
-//login :
- router.post('/login', require('../controllers/users.js').login)
+// router.get('/', require('../controllers/users.js').getAllUsers)
 
 //SignUp:
- router.post('/sign', require('../controllers/users.js').createNewUser) 
+
+router.post('/signup', require('../controllers/users.js').createNewUser) 
+
+//login :
+
+router.post('/login', require('../controllers/users.js').login)
 
 module.exports = router;

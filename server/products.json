@@ -1,0 +1,118 @@
+{"products":
+    [{"id":1,
+        "title":"iPhone 9",
+        "image":"https://dummyjson.com/image/i/products/1/thumbnail.jpg",
+        "price":"549DT",
+        "description":"An apple mobile which is nothing like apple",
+        "category":"smartphones",
+        "stock":94,
+        "tel": "22 222 222"
+        },
+        {"id":2,
+            "title":"iPhone X",
+            "image":"https://dummyjson.com/image/i/products/2/thumbnail.jpg",
+            "price":"899DT",
+            "description":"SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+            "category":"smartphones",
+            "stock":34,
+           "tel": "22 222 222"
+            },
+            {"id":3,
+                "title":"Samsung Universe 9",
+                "image":"https://dummyjson.com/image/i/products/3/thumbnail.jpg",
+                "price":"1249",
+                "description":"Samsung's new variant which goes beyond Galaxy to the Universe",
+                "category":"smartphones",
+                "stock":36,
+                "tel": "22 222 222"
+                },
+                {"id":4,
+                    "title":"OPPOF19",
+                    "image":"https://dummyjson.com/image/i/products/4/thumbnail.jpg",
+                    "price":"280DT",
+                    "description":"OPPO F19 is officially announced on April 2021.",
+                    "category":"smartphones",
+                    "stock":123,
+                    "tel" :"22 222 222"
+                    },
+                    {"id":5,
+                        "title":"Huawei P30",
+                        "image":"https://dummyjson.com/image/i/products/5/thumbnail.jpg",
+                        "price": "680DT",
+                        "description":"Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+                        "category":"smartphones",
+                        "stock":32,
+                        "tel":"22 222 222"
+                       
+                        },
+                        {"id":6,
+                            "title":"MacBook Pro",
+                            "image":"https://dummyjson.com/image/i/products/6/thumbnail.png",
+                            "price":"1749DT",
+                            "description":"MacBook Pro 2021 with mini-LED display may launch between September, November",
+                            "category":"laptops",
+                            "stock":83,
+                           "tel":"22 222 222"
+                            
+                            },
+                            {"id":7,
+                                "title":"Samsung Galaxy Book",
+                                "image":"https://dummyjson.com/image/i/products/7/thumbnail.jpg",
+                                "price":1499,
+                                "description":"Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+                                "category":"laptops",
+                                "stock":50,
+                                "tel":"22 222 222"
+                               
+                                },
+                                {"id":8,
+                                    "title":"Microsoft Surface Laptop 4",
+                                    "image":"https://dummyjson.com/image/i/products/8/thumbnail.jpg",
+                                    "price":"1499DT",
+                                    "description":"Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+                                    "category":"laptops",
+                                    "stock":68,
+                                    "tel":"22 222 222"
+                                   
+                                    },
+                                    {"id":9,
+                                        "title":"Infinix INBOOK",
+                                        "image":"https://dummyjson.com/image/i/products/9/thumbnail.jpg",
+                                        "price":"1099DT",
+                                        "description":"Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+                                        "category":"laptops",
+                                        "stock":96,
+                                        "tel":"22 222 222"
+                                       
+                                        },
+                                        {"id":10,
+                                            "title":"HP Pavilion 15-DK1056WM",
+                                            "image":"https://dummyjson.com/image/i/products/10/thumbnail.jpeg",
+                                            "price":"1099DT",
+                                            "description":"HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+                                            "category":"laptops",
+                                            "stock":89,
+                                            "tel":"22 222 222"
+                                           
+                                            },
+                                            {"id":11,
+                                                "title":"perfume Oil",
+                                                "image":"https://dummyjson.com/image/i/products/11/thumbnail.jpg",
+                                                "price":"13DT",
+                                                "description":"Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
+                                                "category":"fragrances",
+                                                "stock":65,
+                                                "tel":"22 222 222"
+                                               
+                                                },
+                                                {"id":12,
+                                                    "title":"Brown Perfume",
+                                                    "image":"https://dummyjson.com/image/i/products/12/thumbnail.jpg",
+                                                    "price":"40DT",
+                                                    "description":"Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
+                                                    "category":"fragrances",
+                                                    "stock":52,
+                                                    "tel":"22 222 222"
+                                                   
+        }]
+}
