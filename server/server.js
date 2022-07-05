@@ -10,14 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 
 const Port = 3001;
 
-app.use("/", require("./routes/users.js"));
-
-// to test ... use http://localhost:3001/market/get
-//
-app.use("/market", require("./routes/market.js"));
-
-app.use("/getproduct", require("./routes/product.js"));
-
 app.use("/getusers", require("./routes/users.js"));
 
 //To test in thunder you have to put the path of server.js+ path routes.js like this (http://localhost:3001/market/get)
