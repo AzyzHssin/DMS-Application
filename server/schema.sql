@@ -40,14 +40,14 @@ CREATE TABLE sell(
 );
 CREATE TABLE product (
     id INT NOT NULL AUTO_INCREMENT,
-    title_p VARCHAR5(40) NOT NULL,
+    title_p VARCHAR(40) NOT NULL,
     image_p VARCHAR(500) NOT NULL,
     price_p VARCHAR(20) NOT NULL,
     description_p VARCHAR(500) NOT NULL,
     categorie_p VARCHAR(500) NOT NULL,
     quantite INT NOT NULL,
     tel VARCHAR(10) NOT NULL,
-    users_id INT NOT NULL,
+    users_id INT NOT NULL, 
     PRIMARY KEY (id),
     CONSTRAINT users_id
     FOREIGN KEY (users_id)
