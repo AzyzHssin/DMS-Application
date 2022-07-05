@@ -1,7 +1,8 @@
 
 import React from "react";
 import OneProduct from "./OneProduct";
-class Products extends React.Component{
+class 
+Products extends React.Component{
     constructor(props){
         super(props)
     this.state = {
@@ -19,7 +20,7 @@ class Products extends React.Component{
          let key=element.id
       return(  
           
-      <OneProduct data={element} key={key}/>
+      <OneProduct info={element} key={key}/>
       )
        })
 }
