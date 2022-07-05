@@ -28,14 +28,14 @@ class App extends React.Component{
       this.fetchingProducts()
     }
     createAccount(account){
-      axios.post("http://localhost:3001/signin",account).then(result=>{
+      axios.post("http://localhost:3001/users/signin",account).then(result=>{
         
         console.log("account created successfully")
         
     })
     }
     fetchingUser(){
-      axios.get("http://localhost:3001/login",{username:this.state.username,password:this.state.password}).then(result=>{
+      axios.get("http://localhost:3001/users/login",{username:this.state.username,password:this.state.password}).then(result=>{
         
         this.setState({
             account:result.data
@@ -44,7 +44,7 @@ class App extends React.Component{
     })
     }
     fetchingProducts(){
-      axios.get("http://localhost:3001/get").then((result)=>{
+      axios.get("http://localhost:3001/market/get").then((result)=>{
         
         this.setState({
           bigdata:result.data
