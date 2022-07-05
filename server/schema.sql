@@ -78,7 +78,7 @@ INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quant
 INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("Samsung Universe 9","https://dummyjson.com/image/i/products/3/thumbnail.jpg","1249DT","Samsung's new variant which goes beyond Galaxy to the Universe","smartphones",36,"22 222 222",1);
 INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("OPPOF19","https://dummyjson.com/image/i/products/4/thumbnail.jpg","280DT","OPPO F19 is officially announced on April 2021.","smartphones",123,"22 222 222",1);
 INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("Huawei P30","https://dummyjson.com/image/i/products/5/thumbnail.jpg","680DT","Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.","smartphones",32,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("perfume Oil","https://dummyjson.com/image/i/products/11/thumbnail.jpg","13DT","Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil","fragrances",:65,"22 222 222",1);
+INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("perfume Oil","https://dummyjson.com/image/i/products/11/thumbnail.jpg","13DT","Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil","fragrances",65,"22 222 222",1);
 
 
 
