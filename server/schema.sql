@@ -47,7 +47,7 @@ CREATE TABLE product (
     categorie VARCHAR(500) NOT NULL,
     quantite INT NOT NULL,
     tel VARCHAR(10) NOT NULL,
-    users_id INT NOT NULL,
+    users_id INT NOT NULL, 
     PRIMARY KEY (id),
     CONSTRAINT users_id
     FOREIGN KEY (users_id)

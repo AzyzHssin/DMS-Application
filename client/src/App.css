@@ -37,3 +37,48 @@
   }
 }
 /* font-family: Libre Franklin, 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans'; */
+.nav {
+  color: rgb(204, 129, 32);
+  background-color: rgb(75, 65, 214);
+  overflow: hidden;
+  font-size: 20px;
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Francois One";
+}
+
+.nav-selected {
+  padding: 5px;
+  color: rgb(216, 207, 77);
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.nav-unselected {
+  padding: 5px;
+  margin-right: 5px;
+  color: grey;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+body {
+  background-color: beige;
+  text-align: center;
+}
+
+.ProductContainer {
+  width: 420px;
+  padding: 8px;
+  border: 3px solid rgb(22, 2, 48);
+  margin: auto;
+  box-shadow: 5px 8px #092e25;
+}
+.image {
+  width: 200;
+  height: 200;
+}
