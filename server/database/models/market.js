@@ -18,7 +18,13 @@ module.exports = {
         })
     },
     updateMarket: (params, callback) =>{
-        let mysql = `UPDATE sell SET title=?, image_url=?, price=?, description=?, categorie=?, quantite=?, tel=? WHERE id=?`;
+        let mysql = `UPDATE sell SET title=(?), image_url=(?), price=(?), description=(?), categorie=(?), quantite=(?), tel=(?) WHERE id=(?)`;
+        connection.query(mysql, params, (err,results)=>{
+            return err ? callback(err,null) : callback(null,results)
+        })
+    },
+    deleteMarket : (params, callback) =>{
+        let mysql = `DELETE FROM sell WHERE id=?`;
         connection.query(mysql, params, (err,results)=>{
             return err ? callback(err,null) : callback(null,results)
         })

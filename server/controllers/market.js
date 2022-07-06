@@ -27,12 +27,23 @@ getMarket:(req,res)=>{
 },
 update: (req,res)=>{
     console.log('inside update request');
-    market.updateMarket([req.body.title,req.body.image_url,req.body.price,req.body.decription,req.body.categorie,req.body.quantite.req.body.tel],(err,results)=>{
+    market.updateMarket([req.body.title,req.body.image_url,req.body.price,req.body.decription,req.body.categorie,req.body.quantite.req.body.tel,req.body],(err,results)=>{
         if(err) {
             console.log(err)
             res.status(409).send('Update failed')
         }else  {
             res.status(201).send('Market has been updated')
+        }
+    })
+},
+delete: (req,res) =>{
+    console.log("inside delete request")
+    market.deleteMarket([req.body.id],(err,results)=>{
+        if(err) {
+            console.log(err)
+            res.status(409).send("failed to delete")
+        }else  {
+            res.status(201).send("Market has been delete it")
         }
     })
 }

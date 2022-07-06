@@ -15,4 +15,9 @@ router.get('/get',require('../controllers/market.js').getMarket);
 
  router.patch('/update', require('../controllers/market.js').update);
 
+ //Delete the market :
+
+ router.delete('/delete', require('../controllers/market.js').delete);
+
+ 
 module.exports = router;
