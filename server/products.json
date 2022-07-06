@@ -1,5 +1,6 @@
-{"products":
-    [{"id":1,
+
+    [
+        {"id":1,
         "title":"iPhone 9",
         "image":"https://dummyjson.com/image/i/products/1/thumbnail.jpg",
         "price":"549DT",
@@ -114,5 +115,5 @@
                                                     "stock":52,
                                                     "tel":"22 222 222"
                                                    
-        }]
-}
+        }
+    ]

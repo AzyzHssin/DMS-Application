@@ -5,7 +5,7 @@ const router = express.Router();
 
 //getAllUser :
 
-router.get("/users", require("../controllers/users.js").getAllUsers);
+router.get("/get", require("../controllers/users.js").getAllUsers);
 
 //SignUp:
 

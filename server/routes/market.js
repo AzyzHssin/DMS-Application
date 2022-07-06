@@ -11,4 +11,8 @@ router.post('/create', require('../controllers/market.js').createMarket);
 
 router.get('/get',require('../controllers/market.js').getMarket);
 
+//Update the market :
+
+ router.patch('/update', require('../controllers/market.js').update);
+
 module.exports = router;
