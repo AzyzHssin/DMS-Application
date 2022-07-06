@@ -15,7 +15,7 @@ module.exports = {
     }
 ,
 getMarket:(req,res)=>{
-    console.log("im inside the request get")
+    console.log("im inside the request get market")
     market.getAllMarkets((err,result)=>{
         if(err){
             res.status(500).send()
@@ -24,6 +24,17 @@ getMarket:(req,res)=>{
                 res.json(result)
         }
 })
+},
+update: (req,res)=>{
+    console.log('inside update request');
+    market.updateMarket([req.body.title,req.body.image_url,req.body.price,req.body.decription,req.body.categorie,req.body.quantite.req.body.tel],(err,results)=>{
+        if(err) {
+            console.log(err)
+            res.status(409).send('Update failed')
+        }else  {
+            res.status(201).send('Market has been updated succefuly')
+        }
+    })
 }
 
 
