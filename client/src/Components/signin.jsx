@@ -7,7 +7,17 @@ class Signin extends React.Component {
   }
 
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <form action="">
+          <p>please sign in</p>
+          <input type="text" name="" id="" placeholder="e-mail" />
+          <input type="text" name="" id="" placeholder="password" />
+          <br />
+          <button> ok</button>
+        </form>
+      </div>
+    );
   }
 }
 export default Signin;
