@@ -44,7 +44,7 @@ class App extends React.Component{
     })
     }
     fetchingProducts(){
-      axios.get("http://localhost:3001/market/get").then((result)=>{
+      axios.get("http://localhost:3001/product/get").then((result)=>{
         
         this.setState({
           bigdata:result.data

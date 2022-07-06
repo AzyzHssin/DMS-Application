@@ -40,11 +40,11 @@ CREATE TABLE sell(
 );
 CREATE TABLE product (
     id INT NOT NULL AUTO_INCREMENT,
-    title_p VARCHAR(40) NOT NULL,
-    image_p VARCHAR(500) NOT NULL,
-    price_p VARCHAR(20) NOT NULL,
-    description_p VARCHAR(500) NOT NULL,
-    categorie_p VARCHAR(500) NOT NULL,
+    title VARCHAR(40) NOT NULL,
+    image_url VARCHAR(500) NOT NULL,
+    price VARCHAR(20) NOT NULL,
+    description VARCHAR(500) NOT NULL,
+    categorie VARCHAR(500) NOT NULL,
     quantite INT NOT NULL,
     tel VARCHAR(10) NOT NULL,
     users_id INT NOT NULL,
@@ -73,18 +73,18 @@ INSERT INTO sell(title, image_url, price, description, categorie, quantite, tel,
 
 -- data for table product:
 
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("iPhone 9","https://dummyjson.com/image/i/products/1/thumbnail.jpg","549DT","An apple mobile which is nothing like apple","smartphones",94,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("iPhone X","https://dummyjson.com/image/i/products/2/thumbnail.jpg","899DT","SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...","smartphones",34,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("Samsung Universe 9","https://dummyjson.com/image/i/products/3/thumbnail.jpg","1249DT","Samsung's new variant which goes beyond Galaxy to the Universe","smartphones",36,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("OPPOF19","https://dummyjson.com/image/i/products/4/thumbnail.jpg","280DT","OPPO F19 is officially announced on April 2021.","smartphones",123,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("Huawei P30","https://dummyjson.com/image/i/products/5/thumbnail.jpg","680DT","Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.","smartphones",32,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("perfume Oil","https://dummyjson.com/image/i/products/11/thumbnail.jpg","13DT","Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil","fragrances",65,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("Brown Perfume","https://dummyjson.com/image/i/products/12/thumbnail.jpg","40DT","Royal_Mirage Sport Brown Perfume for Men & Women - 120ml","fragrances",52,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("HP Pavilion 15-DK1056WM","https://dummyjson.com/image/i/products/10/thumbnail.jpeg","1099DT","HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10","laptops",89,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("Infinix INBOOK","https://dummyjson.com/image/i/products/9/thumbnail.jpg","1099DT","Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty","laptops",96,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("Microsoft Surface Laptop 4","https://dummyjson.com/image/i/products/8/thumbnail.jpg","1499DT","Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.","laptops",68,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("Samsung Galaxy Book","https://dummyjson.com/image/i/products/7/thumbnail.jpg","1499DT","Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched","laptops",50,"22 222 222",1);
-INSERT INTO product(title_p, image_p, price_p, description_p, categorie_p, quantite, tel,users_id) VALUES ("MacBook Pro","https://dummyjson.com/image/i/products/6/thumbnail.png","1749DT","MacBook Pro 2021 with mini-LED display may launch between September, November","laptops",83,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("iPhone 9","https://dummyjson.com/image/i/products/1/thumbnail.jpg","549DT","An apple mobile which is nothing like apple","smartphones",94,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("iPhone X","https://dummyjson.com/image/i/products/2/thumbnail.jpg","899DT","SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...","smartphones",34,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("Samsung Universe 9","https://dummyjson.com/image/i/products/3/thumbnail.jpg","1249DT","Samsung's new variant which goes beyond Galaxy to the Universe","smartphones",36,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("OPPOF19","https://dummyjson.com/image/i/products/4/thumbnail.jpg","280DT","OPPO F19 is officially announced on April 2021.","smartphones",123,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("Huawei P30","https://dummyjson.com/image/i/products/5/thumbnail.jpg","680DT","Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.","smartphones",32,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("perfume Oil","https://dummyjson.com/image/i/products/11/thumbnail.jpg","13DT","Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil","fragrances",65,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("Brown Perfume","https://dummyjson.com/image/i/products/12/thumbnail.jpg","40DT","Royal_Mirage Sport Brown Perfume for Men & Women - 120ml","fragrances",52,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("HP Pavilion 15-DK1056WM","https://dummyjson.com/image/i/products/10/thumbnail.jpeg","1099DT","HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10","laptops",89,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("Infinix INBOOK","https://dummyjson.com/image/i/products/9/thumbnail.jpg","1099DT","Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty","laptops",96,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("Microsoft Surface Laptop 4","https://dummyjson.com/image/i/products/8/thumbnail.jpg","1499DT","Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.","laptops",68,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("Samsung Galaxy Book","https://dummyjson.com/image/i/products/7/thumbnail.jpg","1499DT","Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched","laptops",50,"22 222 222",1);
+INSERT INTO product(title, image_url, price, description, categorie, quantite, tel,users_id) VALUES ("MacBook Pro","https://dummyjson.com/image/i/products/6/thumbnail.png","1749DT","MacBook Pro 2021 with mini-LED display may launch between September, November","laptops",83,"22 222 222",1);
 
 
 

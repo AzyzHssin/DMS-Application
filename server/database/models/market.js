@@ -16,5 +16,11 @@ module.exports = {
         connection.query(mysql, (err,results)=>{
             return err ? callback(err,null) : callback(null,results)        
         })
+    },
+    updateMarket: (params, callback) =>{
+        let mysql = `UPDATE sell SET title=?, image_url=?, price=?, description=?, categorie=?, quantite=?, tel=? WHERE id=?`;
+        connection.query(mysql, params, (err,results)=>{
+            return err ? callback(err,null) : callback(null,results)
+        })
     }
 }
