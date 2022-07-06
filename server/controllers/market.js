@@ -32,7 +32,7 @@ update: (req,res)=>{
             console.log(err)
             res.status(409).send('Update failed')
         }else  {
-            res.status(201).send('Market has been updated succefuly')
+            res.status(201).send('Market has been updated')
         }
     })
 }
