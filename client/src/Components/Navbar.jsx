@@ -31,6 +31,14 @@ const Navbar = (props) => (
           >
             sign In
           </div>
+          <div
+            className={
+              props.view === "login" ? "nav-selected" : "nav-unselected"
+            }
+            onClick={() => props.changeView("login")}
+          >
+            Login
+          </div>
         </nav>
       </div>
     }

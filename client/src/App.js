@@ -7,6 +7,7 @@ import SellYourProduct from "./Components/SellYourProduct";
 import ProductInfo from "./Components/ProductInfo";
 import axios from "axios";
 import Signin from "./Components/Signin";
+import Login from "./Components/Login";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -109,6 +110,8 @@ class App extends React.Component {
       return <ProductInfo id={this.state.productid} />;
     } else if (this.state.view === "signin") {
       return <Signin id={this.state.productid} />;
+    }else if(this.state.view === "login") {
+      return <Login id={this.state.productid} />;
     }
   }
   render() {
