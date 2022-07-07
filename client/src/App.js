@@ -19,17 +19,29 @@ class App extends React.Component {
       username: "",
       password: "",
     };
+    this.createAccount=this.createAccount.bind(this);
+    this.fetchingUser=this.fetchingUser.bind(this);
     this.fetchingProducts = this.fetchingProducts.bind(this);
+    this.fetchingUserProduct=this.fetchingUserProduct.bind(this);
+    this.addYourProduct= this.addYourProduct.bind(this);
+    this.updateProduct=this.updateProduct.bind(this);
+    this.deleteProduct=this.deleteProduct.bind(this);
     this.changeView = this.changeView.bind(this);
   }
   componentDidMount() {
     this.fetchingProducts();
   }
+
+  //Signup page:
+
   createAccount(account) {
     axios.post("http://localhost:3001/users/signin", account).then((result) => {
       console.log("account created successfully");
     });
   }
+
+  //Login page:
+
   fetchingUser() {
     axios
       .get("http://localhost:3001/users/login", {
@@ -42,6 +54,7 @@ class App extends React.Component {
         });
       });
   }
+
   fetchingProducts() {
     axios.get("http://localhost:3001/product/get").then((result) => {
       this.setState({
@@ -50,7 +63,7 @@ class App extends React.Component {
       console.log(this.state.bigdata, "big data");
     });
   }
-
+//To add the product that exist in table sell to the user page (Different from the data that exist in table product)
   fetchingUserProduct() {
     axios.get("http://localhost:3001/market/get").then((result)=>{
       this.setState({
@@ -59,6 +72,26 @@ class App extends React.Component {
       console.log(this.state.userData,"this is user data from table sell")
     })
    }
+//To let the user sell his market :
+  addYourProduct(product) {
+    axios.post("http://localhost:3001/market/create", product).then((result)=>{
+      console.log("Product has been add")
+    })
+  }
+
+  //To let the user update his product:
+  updateProduct(id) {
+    axios.patch("http://localhost:3001/market/update",id).then((result)=>{
+      console.log("Market has been updated")
+    })
+  }
+
+  //To delete a product :
+  deleteProduct(id) {
+    axios.delete("http://localhost:3001/market/delete",id).then((result)=>{
+      console.log("Product has been delete it")
+    })
+  }
 
   changeView(view) {
     this.setState({
