@@ -2,7 +2,7 @@
 module.exports = {
   host: "localhost",
   user: "root",
-  password: "root",
+  password: "azerty09997414SAMEH",
   database: "market",
   insecureAuth: true,
 };

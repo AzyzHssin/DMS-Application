@@ -14,6 +14,7 @@ class App extends React.Component {
       view: "welcome",
       productid: null,
       bigdata: [],
+      userData: [],
       account: {},
       username: "",
       password: "",
@@ -46,10 +47,18 @@ class App extends React.Component {
       this.setState({
         bigdata: result.data,
       });
-
       console.log(this.state.bigdata, "big data");
     });
   }
+
+  fetchingUserProduct() {
+    axios.get("http://localhost:3001/market/get").then((result)=>{
+      this.setState({
+        userData: result.data
+      });
+      console.log(this.state.userData,"this is user data from table sell")
+    })
+   }
 
   changeView(view) {
     this.setState({

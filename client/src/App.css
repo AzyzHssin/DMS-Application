@@ -82,3 +82,9 @@ body {
   width: 200;
   height: 200;
 }
+.text-form{
+  display:flexbox;
+  font-family: sans-serif;
+  position: inherit;
+  padding:5%
+}
