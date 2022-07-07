@@ -11,7 +11,7 @@ class WelcomePage extends React.Component {
       <div>
         <h2>welcome in DMS</h2>
         <h3> Digital-Marketing-Studio</h3>
-        <p> to asign please click in signin </p>
+        <p> To buy or to sell your product please Signin and login </p>
       </div>
     );
   }
