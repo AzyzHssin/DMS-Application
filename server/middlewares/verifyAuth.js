@@ -6,7 +6,7 @@ const tokenSecret = require ('../config/authConfig')
 module.exports = (req,res,next)=> {
     const token = req.headers["cookie"]
     if(!token){
-      res.redirect('/signup')
+      res.redirect('/signin')
     }
     else{
     jwt.verify(token,tokenSecret.ACCESS_TOKEN_SECRET,(err,user)=>{

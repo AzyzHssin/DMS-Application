@@ -4,10 +4,10 @@ import WelcomePage from "./Components/WelcomePage";
 import Navbar from "./Components/Navbar";
 import Products from "./Components/Products";
 import SellYourProduct from "./Components/SellYourProduct";
-import ProductInfo from "./Components/ProductInfo";
 import axios from "axios";
 import Signin from "./Components/Signin";
 import Login from "./Components/Login";
+import AccountCreated from"./Components/AccountCreated";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -43,16 +43,24 @@ class App extends React.Component {
 
   //Login page:
 
-  fetchingUser() {
+  fetchingUser(usernameParams,passwordParams) {
     axios
-      .get("http://localhost:3001/users/login", {
-        username: this.state.username,
-        password: this.state.password,
+      .post("http://localhost:3001/users/login", {
+        username: usernameParams,
+        password: passwordParams
       })
       .then((result) => {
-        this.setState({
-          account: result.data,
-        });
+       console.log(result)
+        if(result.data==="wrong username or password"){
+          alert("Wrong username or password check your informations again please ")
+        }
+        else{
+          this.changeView("products")
+          this.setState({
+            account: result.data[0],
+          });
+        }
+        
       });
   }
 
@@ -105,13 +113,14 @@ class App extends React.Component {
     } else if (this.state.view === "SellYourProduct") {
       return <SellYourProduct />;
     } else if (this.state.view === "welcome") {
-      return <WelcomePage />;
-    } else if (this.state.view === "productinfo") {
-      return <ProductInfo id={this.state.productid} />;
-    } else if (this.state.view === "signin") {
-      return <Signin id={this.state.productid} />;
-    }else if(this.state.view === "login") {
-      return <Login id={this.state.productid} />;
+      return <WelcomePage changeView={this.changeView}/>;
+    }else if (this.state.view === "signin") {
+      return <Signin id={this.state.productid} createAccount={this.createAccount} changeView={this.changeView}/>;
+    }else if(this.state.view === "login" ) {
+      return <Login id={this.state.productid}  fetchingUser={this.fetchingUser}     />;
+    }
+    else if (this.state.view === "created"){
+      return <AccountCreated />
     }
   }
   render() {

@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
-const Port = process.env.port || 3001
+const Port =3001
 
 
 

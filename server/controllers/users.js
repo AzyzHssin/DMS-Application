@@ -17,10 +17,9 @@ module.exports = {
         res.render("login", {showLogin: true});
     },
     createNewUser: async (req,res) =>{
-        const hashedPassword = await encrypt.hashPassword(
-            req.body.password,
-            saltRounds
-        );
+        console.log("hashing password ")
+        console.log(req.body.password)
+        const hashedPassword = await encrypt.hashPassword(req.body.password,saltRounds);
         user.getUsersByName([req.body.username], (err, result)=>{
             if(err){
                 console.log(err)
@@ -28,6 +27,7 @@ module.exports = {
                 res.status(400).send("User already exists")
             }else {
                 try {
+                    console.log("creating new user in the backend")
                     user.createNewUser([req.body.username, hashedPassword, req.body.avatar, req.body.wallet, req.body.tel], (err, results) => {
                         if (err) {
                             console.log(err)
@@ -48,24 +48,23 @@ module.exports = {
         })
     },
     login: (req, res) => {
-        user.getUsersByName([req.body.username], async (err, result) => {
+        user.getUsersByName([req.body.username,req.body.password], async (err, result) => {
 
             
             if (err) { console.log(err) }
-            else if (!result.length) {
-                res.send("wrong user name")
+            else if (result.length==0) {
+                res.send("wrong username or password")
             }
             else {
                 try {
                     
-                    const match = req.body.password&&result[0].password
-                    if (match) {
-                        
-                        res.status(200).json({ result: "created "})
-                    }
-                    else {
-                        res.send("not allowed")
-                    }
+                    
+                    
+                        console.log("password matched")
+                        console.log(result)
+                        res.status(200).json(result)
+                    
+                   
                 }
                 catch (err) {
                     console.log(err)

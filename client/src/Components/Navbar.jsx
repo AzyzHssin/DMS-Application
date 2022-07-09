@@ -1,5 +1,4 @@
 import React from "react";
-import Signin from "./Signin";
 const Navbar = (props) => (
   <div className="">
     {

@@ -9,7 +9,7 @@ router.get("/get", require("../controllers/users.js").getAllUsers);
 
 //SignUp:
 
-router.post("/signup", require("../controllers/users.js").createNewUser);
+router.post("/signin", require("../controllers/users.js").createNewUser);
 
 //login :
 
