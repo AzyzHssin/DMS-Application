@@ -42,16 +42,18 @@ class Products extends React.Component {
   
   
 </div>
-        <br />
+      <div className="grid-container">
+        <br /> <br></br> <br></br> <br></br> 
         {this.props.data.map((element) => {
           let key = element.id;
           return (
-            <div>
+            <div className="grid-item">
               <OneProduct deleteProduct={this.props.deleteProduct} info={element} accountId={this.props.accountId} key={key} />
               <br />
             </div>
           );
         })}
+      </div>
       </div>
     );
   }
