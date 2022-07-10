@@ -2,7 +2,7 @@ import React from "react";
 
 const OneProduct = (props) => (
   <div className="ProductContainer">
-    <div className="deleteProduct" onClick={()=>{console.log(props.info.id,props.accountId);props.deleteProduct(props.info.id,props.accountId)}}></div>
+    <div className="deleteProduct" onClick={()=>{console.log(props.info.id,props.accountId);props.deleteProduct(props.info.id,props.accountId)}}>x</div>
     <h2 className="Title">{props.info.title} for sale</h2>
     <img
       className="image"

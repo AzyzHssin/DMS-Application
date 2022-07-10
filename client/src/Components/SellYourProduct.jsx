@@ -53,11 +53,44 @@ class SellYourProduct extends React.Component{
     render(){
        return( 
  <div>
+  <div id="viewport">
+  
+  <div id="sidebarleft">
+    <header>
+      <a href="#">Navigation</a>
+    </header>
+    <ul class="nav">
+    
+    <div
+            className={
+              this.props.view === "products" ? "nav-selected" : "nav-unselected"
+            }
+            onClick={() => this.props.changeView("products")}
+          >
+            Products
+    </div>
+          <div
+            className={
+              this.props.view === "SellYourProduct"
+                ? "nav-selected"
+                : "nav-unselected"
+            }
+            onClick={() => this.props.changeView("SellYourProduct")}
+          >
+            Sell Your Product
+          </div>
+     
+     
+    </ul>
+  </div>
+  
+  
+</div>
   <br></br> <br></br>
     <br></br>
     
   <div id="container">
-  <h3>publish products</h3>
+  <h3>Publish Products</h3>
       <form className="">
         <table>
           <tr>
