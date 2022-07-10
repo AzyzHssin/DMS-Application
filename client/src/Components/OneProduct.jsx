@@ -16,7 +16,7 @@ const OneProduct = (props) => (
     <p className="description">{props.info.description}</p>
     <p className="quantite">{props.info.quantite} Item in stock</p>
     <p className="tel">{props.info.tel}</p>
-    
+    <input type="submit" value="Buy"></input>
   </div>
 );
 
