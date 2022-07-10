@@ -18,7 +18,8 @@ class App extends React.Component {
       userData: [],
       account: {},
       username: "",
-      password: "",
+      password: ""
+
     };
     this.createAccount=this.createAccount.bind(this);
     this.fetchingUser=this.fetchingUser.bind(this);
@@ -40,6 +41,7 @@ class App extends React.Component {
       console.log("account created successfully");
     });
   }
+  
 
   //Login page:
 
@@ -58,6 +60,7 @@ class App extends React.Component {
           this.changeView("products")
           this.setState({
             account: result.data[0],
+            
           });
         }
         
@@ -111,7 +114,7 @@ class App extends React.Component {
     if (this.state.view === "products") {
       return <Products data={this.state.bigdata} />;
     } else if (this.state.view === "SellYourProduct") {
-      return <SellYourProduct />;
+      return <SellYourProduct users_id={this.state.account.id} addYourProduct={this.addYourProduct}/>;
     } else if (this.state.view === "welcome") {
       return <WelcomePage changeView={this.changeView}/>;
     }else if (this.state.view === "signin") {

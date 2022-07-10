@@ -4,8 +4,10 @@ const connection = require("../index.js");
 
 module.exports = {
   addMarket: (params, callback) => {
+    console.log(params)
     let mysql = `INSERT INTO sell (users_id ,title, image_url, price, description, categorie, quantite, tel) VALUES (?,?,?,?,?,?,?,?)`;
     //change the params the same order of query like this [req.body.users.id,req.body.quantity......]
+   console.log(params,"inside the query")
     connection.query(mysql, params, (err, results) => {
       return err ? callback(err, null) : callback(null, results);
     });

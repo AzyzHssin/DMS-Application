@@ -4,7 +4,8 @@ const market = require('../database/models/market.js');
 
 module.exports = {
     createMarket: (req,res)=>{
-        market.addMarket([req.body.id, req.body.username, req.body.title, req.body.image_url, req.body.price, req.body.decription, req.body.categorie, req.body.quantite, req.body.tel],(err,results)=>{
+        
+        market.addMarket([ req.body.users_id, req.body.title, req.body.image_url, req.body.price, req.body.description, req.body.categorie, req.body.quantite, req.body.telephone],(err,results)=>{
             if(err) {
                 console.log(err)
                 res.status(409).send()
