@@ -7,7 +7,7 @@ module.exports = {
     console.log(params)
     let mysql = `INSERT INTO sell (users_id ,title, image_url, price, description, categorie, quantite, tel) VALUES (?,?,?,?,?,?,?,?)`;
     //change the params the same order of query like this [req.body.users.id,req.body.quantity......]
-   console.log(params,"inside the query")
+   
     connection.query(mysql, params, (err, results) => {
       return err ? callback(err, null) : callback(null, results);
     });
@@ -24,4 +24,11 @@ module.exports = {
       return err ? callback(err, null) : callback(null, results);
     });
   },
+  deleteMarket:(params, callback) => {
+    
+    let mysql = `Delete from sell where users_id=? and id=?`;
+    connection.query(mysql, params, (err, results) => {
+      return err ? callback(err, null) : callback(null, results);
+    });
+  }
 };

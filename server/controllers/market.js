@@ -4,7 +4,7 @@ const market = require('../database/models/market.js');
 
 module.exports = {
     createMarket: (req,res)=>{
-        
+        console.log(req.body)
         market.addMarket([ req.body.users_id, req.body.title, req.body.image_url, req.body.price, req.body.description, req.body.categorie, req.body.quantite, req.body.telephone],(err,results)=>{
             if(err) {
                 console.log(err)
@@ -39,7 +39,8 @@ update: (req,res)=>{
 },
 delete: (req,res) =>{
     console.log("inside delete request")
-    market.deleteMarket([req.body.id],(err,results)=>{
+    console.log(req.body)
+    market.deleteMarket([req.body.users_id,req.body.id],(err,results)=>{
         if(err) {
             console.log(err)
             res.status(409).send("failed to delete")
@@ -48,6 +49,4 @@ delete: (req,res) =>{
         }
     })
 }
-
-
 }

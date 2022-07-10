@@ -53,31 +53,58 @@ class SellYourProduct extends React.Component{
     render(){
        return( 
  <div>
+  <br></br> <br></br>
+    <br></br>
+    
+  <div id="container">
+  <h3>publish products</h3>
       <form className="">
-                <label className="text-form" >Title:
-                <input type="text" name="name" id="title"  onChange={this.handleChangeTitle} placeholder="Title" required /><br></br>
-                </label><br></br>
-                <label className="text-form">Image:
-                <input type="text" name='image_url'  id="image_url" onChange={this.handleChangeImageUrl} placeholder="Image URL" required /><br></br>
-                </label><br></br>
-                <label  className="text-form">Price:
-                <input type="text" name="price" id="price" onChange={this.handleChangePrice} placeholder="Price"  required/><br></br>
-                </label><br></br>
-                <label  className="text-form">Description:
-                <input type="text" name="description" id="description" onChange={this.handleChangeDescription} placeholder="Description"  required/><br></br>
-                </label><br></br>
-                <label  className="text-form">Categorie:
-                <input type="text" name="categorie" id="categorie" onChange={this.handleChangeCategorie} placeholder="Categorie"  required/><br></br>
-                </label><br></br>
+        <table>
+          <tr>
+            <td><label className="text-form" >Title:</label></td>
+
+            <td><input type="text" name="name" id="title"  onChange={this.handleChangeTitle} placeholder="Title" required /><br></br>
+                </td>
+          </tr>
+          <tr>
+            <td><label className="text-form">Image:</label></td>
+            <td><input type="text" name='image_url'  id="image_url" onChange={this.handleChangeImageUrl} placeholder="Image URL" required /><br></br></td></tr>
+          <tr>
+            <td><label  className="text-form">Price:</label></td>
+            <td> <input type="text" name="price" id="price" onChange={this.handleChangePrice} placeholder="Price"  required/><br></br></td>
+          </tr>
+          <tr>
+            <td><label  className="text-form">Description:
+                </label></td>
+            <td><input type="text" name="description" id="description" onChange={this.handleChangeDescription} placeholder="Description"  required/><br></br>
+                </td>
+          </tr>
+          <tr>
+            <td><label  className="text-form">Categorie:
+              </label>
+                </td>
+            <td><input type="text" name="categorie" id="categorie" onChange={this.handleChangeCategorie} placeholder="Categorie"  required/><br></br>
+                </td>
+          </tr>
+          <tr>
+            <td>
                 <label  className="text-form">Quantite:
-                <input type="number" name="quantite" id="quantite" onChange={this.handleChangeQuantite} placeholder="Qunatite"  required/><br></br>
-                </label><br></br>
-                <label  className="text-form">Telephone:
-                <input type="text" name="telephone" id="telephone" onChange={this.handleChangeTelephone} placeholder="Telephone"  required/><br></br>
-                </label><br></br>
-                <button  className="btn-submit"  onClick={()=>{console.log(this.state);this.props.addYourProduct(this.state)}}>Add</button> 
+                </label></td>
+            <td><input type="number" name="quantite" id="quantite" onChange={this.handleChangeQuantite} placeholder="Qunatite"  required/><br></br>
+                </td>
+          </tr>
+          <tr>
+            <td><label  className="text-form">Telephone:
+                </label></td>
+            <td><input type="text" name="telephone" id="telephone" onChange={this.handleChangeTelephone} placeholder="Telephone"  required/><br></br>
+                </td>
+          </tr>
+        </table>
+                
+                <button className="btn-submit"  onClick={()=>{console.log(this.state);/* this.props.addYourProduct(this.state) */}}>Add</button> 
 
             </form>
+            </div>
    </div>
       )
     }

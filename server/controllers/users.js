@@ -20,7 +20,7 @@ module.exports = {
         console.log("hashing password ")
         console.log(req.body.password)
         const hashedPassword = await encrypt.hashPassword(req.body.password,saltRounds);
-        user.getUsersByName([req.body.username], (err, result)=>{
+        user.getUsersByName([req.body.username,req.body.password], (err, result)=>{
             if(err){
                 console.log(err)
             }else if(result.length >0) {
@@ -57,11 +57,7 @@ module.exports = {
             }
             else {
                 try {
-                    
-                    
-                    
-                        console.log("password matched")
-                        console.log(result)
+
                         res.status(200).json(result)
                     
                    

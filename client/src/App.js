@@ -16,7 +16,7 @@ class App extends React.Component {
       productid: null,
       bigdata: [],
       userData: [],
-      account: {},
+      account: {id:0},
       username: "",
       password: ""
 
@@ -62,6 +62,7 @@ class App extends React.Component {
             account: result.data[0],
             
           });
+          console.log(this.state.account)
         }
         
       });
@@ -69,8 +70,10 @@ class App extends React.Component {
 
   fetchingProducts() {
     axios.get("http://localhost:3001/product/get").then((result) => {
+      
       this.setState({
         bigdata: result.data,
+        
       });
       console.log(this.state.bigdata, "big data");
     });
@@ -99,8 +102,8 @@ class App extends React.Component {
   }
 
   //To delete a product :
-  deleteProduct(id) {
-    axios.delete("http://localhost:3001/market/delete",id).then((result)=>{
+  deleteProduct(ID,USERS_ID) {
+    axios.post("http://localhost:3001/market/delete",{id:ID,users_id:USERS_ID}).then((result)=>{
       console.log("Product has been delete it")
     })
   }
@@ -112,7 +115,7 @@ class App extends React.Component {
   }
   renderView() {
     if (this.state.view === "products") {
-      return <Products data={this.state.bigdata} />;
+      return <Products deleteProduct={this.deleteProduct} data={this.state.bigdata} changeView={this.changeView} accountId={this.state.account.id}/>;
     } else if (this.state.view === "SellYourProduct") {
       return <SellYourProduct users_id={this.state.account.id} addYourProduct={this.addYourProduct}/>;
     } else if (this.state.view === "welcome") {
@@ -120,7 +123,7 @@ class App extends React.Component {
     }else if (this.state.view === "signin") {
       return <Signin id={this.state.productid} createAccount={this.createAccount} changeView={this.changeView}/>;
     }else if(this.state.view === "login" ) {
-      return <Login id={this.state.productid}  fetchingUser={this.fetchingUser}     />;
+      return <Login id={this.state.productid}  fetchingUser={this.fetchingUser}   changeView={this.changeView}  />;
     }
     else if (this.state.view === "created"){
       return <AccountCreated />

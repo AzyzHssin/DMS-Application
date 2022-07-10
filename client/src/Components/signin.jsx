@@ -1,3 +1,5 @@
+
+
 import React from "react";
 
 class Signin extends React.Component {
@@ -36,6 +38,10 @@ handleChangeTel(event){
   render() {
     return (
       <div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div id="container">
         <form action="">
           <h3>Please sign in</h3>
           <input type="text" name="" id="username" placeholder="User Name" onChange={this.handleChangeUser}/><br></br>
@@ -43,9 +49,10 @@ handleChangeTel(event){
           <input type="url" name="" id="avatar" placeholder="Avatar" onChange={this.handleChangeAvatar}/><br></br>
           <input type="number" name="" id="tel" placeholder="Tel" onChange={this.handleChangeTel}/><br></br>
           <br />
-          <button onClick={()=>{this.props.createAccount({"username":this.state.username,
+          <button id="signin" onClick={()=>{this.props.createAccount({"username":this.state.username,
         "password":this.state.password,"avatar":this.state.avatar,"wallet":0,"tel":this.state.tel} );this.props.changeView("created")}}> SignUp</button>
         </form>
+        </div>
       </div>
     );
   }
