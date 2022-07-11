@@ -10,7 +10,7 @@ const Navbar = (props) => (
           </div>
         <nav className="nav">
         
-         
+
           <div
             className={
               props.view === "signin" ? "nav-selected" : "nav-unselected"
