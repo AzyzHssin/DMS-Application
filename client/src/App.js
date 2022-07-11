@@ -117,7 +117,7 @@ class App extends React.Component {
     if (this.state.view === "products") {
       return <Products deleteProduct={this.deleteProduct} data={this.state.bigdata} changeView={this.changeView} accountId={this.state.account.id}/>;
     } else if (this.state.view === "SellYourProduct") {
-      return <SellYourProduct users_id={this.state.account.id} addYourProduct={this.addYourProduct}/>;
+      return <SellYourProduct changeView={this.changeView} users_id={this.state.account.id} addYourProduct={this.addYourProduct}/>;
     } else if (this.state.view === "welcome") {
       return <WelcomePage changeView={this.changeView}/>;
     }else if (this.state.view === "signin") {
